@@ -1,0 +1,13 @@
+extends default
+
+block header
+
+block content
+  div.item
+    div.item-image(style=`background: url('/images/${item.imgSrc}') top center
+    no-repeat; background-size: cover;`)
+    div.item-details
+      h1.item-name
+        | #{item.product_name} 
+      p.item-bio
+        | #{item.description}

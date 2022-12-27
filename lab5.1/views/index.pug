@@ -1,0 +1,12 @@
+extends default
+
+block content
+  div.container
+    each item in products
+      div.product
+        div.product-image(style=`background: url('/images/${item.imgSrc}') top center
+        no-repeat; background-size: cover;`)
+        h2.product-name
+          | #{item.product_name} 
+        a(href=`/product?id=${item.id}`)
+          | View Profile
