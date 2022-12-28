@@ -24,6 +24,6 @@ app.get("/product", (req, res) => {
   });
 });
 
-const server = app.listen(3001, () => {
+const server = app.listen(3000, () => {
   console.log(`Express running → PORT ${server.address().port}`);
 });

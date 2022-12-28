@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Homepage</title>
+      <link rel="stylesheet" href="/css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <main>
+         <header class="header">
+            <h1>Homepage</h1>
+         </header>
+         <div class="container">
+            <form action="/" method="POST">
+              <label for="fname">Product id:</label><br>
+              <input type="text" id="product_id" name="product_id" value="" required><br>
+              <label for="lname">Product name:</label><br>
+              <input type="text" id="product_name" name="product_name" value="" required><br>
+              <label for="lname">Description:</label><br>
+              <input type="text" id="description" name="description" value="" size=80 required><br>
+              <label for="lname">Image Path:</label><br>
+              <input type="text" id="img_src" name="img_src" value="" size=50 required><br>
+              <br>
+              <input type="submit" value="Submit">
+            </form>
+         </div>
+         <br>
+         <div class="container">
+            <%
+            for(var i=0; i<products.length; i++) {
+            %>
+            <div class="product">
+               <div class="product-image" style="background: url('<%=products[i].imgSrc%>') top center
+                  no-repeat; background-size: cover;"></div>
+               <h2 class="product-name"><%=products[i].product_name%> </h2>
+               <a href="/product?id=apple">View Profile</a>
+            </div>
+            <%
+            }
+            %>
+         </div>
+      </main>
+   </body>
+</html>
