@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Homepage</title>
+      <link rel="stylesheet" href="/css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <main>
+         <header class="header">
+            <h1>Homepage</h1>
+         </header>
+         <div class="container">
+            <%
+            for(var i=0; i<products.length; i++) {
+            %>
+            <div class="product">
+               <div class="product-image" style="background: url('/images/<%=products[i].imgSrc%>') top center
+                  no-repeat; background-size: cover;"></div>
+               <h2 class="product-name"><%=products[i].product_name%> </h2>
+               <a href="/product?id=apple">View Profile</a>
+            </div>
+            <%
+            }
+            %>
+         </div>
+      </main>
+   </body>
+</html>

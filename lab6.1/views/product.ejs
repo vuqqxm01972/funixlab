@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title><%=title%></title>
+      <link rel="stylesheet" href="/css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <main>
+         <div class="item">
+            <div class="item-image" style="background: url('/images/<%=item.imgSrc%>') top center
+               no-repeat; background-size: cover;"></div>
+            <div class="item-details">
+               <h1 class="item-name"><%=item.product_name%> </h1>
+               <p class="item-bio"><%=item.description%></p>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>

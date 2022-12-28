@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "product_name": "Quả Táo",
+      
+      "description":
+        "Mua táo tươi ngon, đảm bảo nguồn gốc rõ ràng, chất lượng cao giòn, ngọt, thơm tại Bách hóa XANH.",
+      
+      "imgSrc": "apple.jpg",
+      "id": "apple"
+    },
+
+    {
+      "product_name": "Quả Lê",
+      
+      "description":
+        "Mua lê tươi ngon, không bị dập, quả ngọt, giòn, to trái và đảm bảo nguồn gốc xuất xứ rõ ràng tại Bách hóa XANH.",
+      
+      "imgSrc": "android.jpg",
+      "id": "android"
+    },
+
+    {
+      "product_name": "Quả Dứa",
+      
+      "description":
+        "Thơm gọt vỏ khay 200g (1-2 miếng) · Ưu điểm khi mua thơm tại Bách hoá XANH · Tác dụng của thơm đối với sức khỏe · Cách bảo quản thơm tươi ngon..",
+      
+      "imgSrc": "pineapple.jpg",
+      "id": "pineapple"
+
+    }
+  ]
+}
