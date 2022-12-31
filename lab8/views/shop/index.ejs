@@ -22,7 +22,7 @@
                             <p class="product__description"><%= product.description %></p>
                         </div>
                         <div class="card__actions">
-                            <button class="btn" onclick="addToCart(<%=product.product_id%>,<%=product.price%>)">Add to Cart</button>
+                            <button class="btn" onclick="addToCart(<%=product.product_id%>, '<%=product.title%>',<%=product.price%>)">Add to Cart</button>
                         </div>
                     </article>
                 <% } %>

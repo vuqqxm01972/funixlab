@@ -16,9 +16,10 @@ backdrop.addEventListener('click', backdropClickHandler);
 menuToggle.addEventListener('click', menuToggleClickHandler);
 
 
-function addToCart(id, price) {
+function addToCart(id,name, price) {
   let data = {
     "id": id,
+    "name":name,
     "price": price
   }
    $.ajax({

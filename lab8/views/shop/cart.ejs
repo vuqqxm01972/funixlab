@@ -25,7 +25,7 @@
 
         <main>
 
-        <% if (prods.length > 0) { %>
+        <% if (productList.length > 0) { %>
             <table>
                 <tr>
                     <th>Product Name</th>
@@ -34,13 +34,15 @@
                     <th>Total</th>
                     <th> </th>
                   </tr>
-                <% for (let product of prods) { %>
+                <% for (let product of productList) { %>
                     <tr>
-                        <td>A Book</td>
-                        <td>10</td>
-                        <td>1</td>
-                        <td>10</td>
-                        <td>Delete</td>
+                        <td><%=product.name%></td>
+                        <td><%=product.price%></td>
+                        <td><%=product.qty%></td>
+                        <td><%=product.price*product.qty%></td>
+                        <td>
+                            <a href="/cart/delete-product?id=<%= product.id %>" class="btn">Delete</a>
+                        </td>
                       </tr>
                 <% } %>
             </table>

@@ -65,22 +65,7 @@ exports.postEditProduct = (req, res, next) => {
       return res.redirect('/');
     }
 
-/*
-    product = productList.find(p => p.product_id == prodId);
 
-    if (!product) {
-        return res.redirect('/');
-      }
-
-
-
-
-      res.render('admin/edit-product', {
-        pageTitle: 'Edit Product',
-        path: '/admin/edit-product',
-        product: product
-      });
-      */
   });
 
 }
